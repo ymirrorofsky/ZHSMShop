@@ -1,0 +1,19 @@
+<ion-view view-title="我的二维码" hide-nav-bar="true">
+	<ion-header-bar class="bar-assertive header-back">
+		<div class="buttons">
+			<button class="button iconfont icon-back1 button-clear" ng-click="$ionicGoBack()">返回</button>
+		</div>
+		<h1 class="title">我的二维码</h1>
+		<!--<div class="buttons">
+			<button class="button button-clear" ui-sref="user.recommendHistory">历史推荐</button>
+		</div>-->
+	</ion-header-bar>
+	<ion-content >
+		<div class="yd-rec-qcode">
+			<h5 ng-bind="myQrcode.message.title"></h5>
+		<!--	<P class="positive" ng-bind="myQrcode.message.hint"></P>-->
+			<img ng-src="{{myQrcode.url || 'img/wuimg.png'}}" />
+		</div>
+	</ion-content>
+</ion-view>
+

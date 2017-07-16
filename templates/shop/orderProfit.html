@@ -1,0 +1,42 @@
+<ion-view view-title="订单收益" hide-nav-bar='true'>
+    <ion-header-bar class="bar-assertive header-back">
+        <div class="buttons">
+            <button class="button iconfont icon-back1 button-clear" ng-click="$ionicGoBack()">返回</button>
+        </div>
+        <h1 class="title">订单收益</h1>
+    </ion-header-bar>
+
+    <ion-content class="bodybg-normal">
+        <ion-refresher pulling-text="下拉刷新..." on-refresh="doRefresh()"></ion-refresher>
+        <div class="count-header">
+            <div class="turnover" style="padding: 20px 0;">
+                <h4 ng-bind="profitInfo.total || 0.00  " style="line-height: 40px;"></h4>
+                <p>收益(元)</p>
+            </div>
+        </div>
+
+        <div class="bodybg-normal" style="height: 10px;">
+            <div class="list list-inset" style="margin:10px;">
+                <label class="item item-input">请选择
+          <i class="icon ion-calendar placeholder-icon"></i>
+         <input type="date"  ng-model="profit.date" value='' ng-change="test()" style="padding-left:10px;padding-right:10px;"><span style="margin-right:10px"><p>{{profit.date | date:'yyyy-MM-dd'}}</p></span>
+                </label>
+            </div>
+            <div class="common-empty" ng-if="orderEmpty">什么也没有...</div>
+            <div class="row" ng-if="!orderEmpty">
+                <div class="col" >订单编号</div>
+                <div class="col" >订单收益</div>
+            </div>
+            <div class="yd-mesg-coutent" ng-if="!orderEmpty" ng-repeat="item in profitInfo.order">
+                <div class="row">
+                    <div class="col ">{{item.orderId}}</div>
+                    <div class="col">{{item.orderPrice}}</div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </ion-content>
+
+</ion-view>

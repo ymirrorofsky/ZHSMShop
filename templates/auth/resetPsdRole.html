@@ -1,0 +1,26 @@
+<ion-view view-title="忘记密码" hide-nav-bar="true" hide-back-button="true">
+    <ion-header-bar class="bar-assertive header-my">
+        <div class="buttons" >
+           <button class="button button-clear icon-back1 iconfont" ng-click="$ionicGoBack()"></button>
+        </div>
+        <h1 class="title">忘记密码</h1>
+
+    </ion-header-bar>
+
+    <ion-content class="bodybg-normal">
+        <ion-refresher pulling-text="下拉刷新..." on-refresh="doRefresh()"></ion-refresher>
+        <div class="list bottom-nav">
+            <li ui-sref='auth.resetPsd({role:0})' class="item item-icon-right" >
+                <i class="iconfont icon-geren2 calm"></i>
+                <span>忘记商家密码</span>
+                <i class="icon ion-chevron-right" style="font-size: 1em;"></i>
+            </li>
+            <li ui-sref='auth.resetPsd({role:1})' class="item item-icon-right">
+                <i class="iconfont icon-geren2 balanced"></i>
+                <span>忘记代理商密码</span>
+                <i class="icon ion-chevron-right" style="font-size: 1em;"></i>
+            </li>
+        </div>
+    </ion-content>
+
+</ion-view>

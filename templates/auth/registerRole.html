@@ -1,0 +1,26 @@
+<ion-view view-title="注册" hide-nav-bar="true" hide-back-button="true">
+    <ion-header-bar class="bar-assertive header-my">
+        <div class="buttons" >
+           <button class="button button-clear icon-back1 iconfont" ng-click="$ionicGoBack()"></button>
+        </div>
+        <h1 class="title">注册</h1>
+
+    </ion-header-bar>
+
+    <ion-content class="bodybg-normal">
+        <ion-refresher pulling-text="下拉刷新..." on-refresh="doRefresh()"></ion-refresher>
+        <div class="list bottom-nav">
+            <li ui-sref='auth.register({role:0})' class="item item-icon-right" >
+                <i class="iconfont icon-geren2 calm" style="color:#ff5b1f"></i>
+                <span>注册成为商家</span>
+                <i class="icon ion-chevron-right" style="font-size: 1em;"></i>
+            </li>
+            <li ui-sref='auth.register({role:1})' class="item item-icon-right">
+                <i class="iconfont icon-geren2 balanced"></i>
+                <span>注册成为代理商</span>
+                <i class="icon ion-chevron-right" style="font-size: 1em;"></i>
+            </li>
+        </div>
+    </ion-content>
+
+</ion-view>

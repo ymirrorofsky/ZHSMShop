@@ -1,0 +1,44 @@
+.bodybg-normal {
+	background-color: #f3f3f3;
+}
+.bodybg-normal2 {
+	background-color: #efeff4;
+}
+.flex {
+	display: -webkit-box;
+	display: box;
+}
+.flex_1 {
+	-webkit-box-flex: 1.0;
+	box-flex: 1.0;
+}
+.flex_2 {
+	-webkit-box-flex: 2;
+	box-flex: 2;
+}
+
+/*单行超出显示省略号*/
+.text-overflow_1 {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/*公用空白区域*/
+.common-empty {
+	font-size: 14px;
+	font-style: normal;
+	line-height: 30px;
+	color: #ddd;
+	text-align: center;
+	margin-top: 50px;
+}
+.common-empty:before {
+	font-family: "iconfont" !important;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	content: "\e62d\A";
+	font-size: 60px;
+	white-space: pre;
+}
+
+

@@ -1,0 +1,28 @@
+<ion-view view-title="Dashboard" hide-nav-bar='true'>
+    <ion-header-bar class="bar-assertive header-back">
+        <div class="buttons">
+            <button class="button button-clear icon-back1 iconfont" ng-click="$ionicGoBack()"></button>
+        </div>
+        <h1 class="title">账户管理</h1>
+
+    </ion-header-bar>
+    <ion-content>
+        <div class="my-bottom-nav">
+            <ul class="clearfix com">
+                <li ui-sref="agent.userInfo({uid:globalInfo.user.uid})" style="width:33.333%">
+                    <i class="iconfont icon-geren2 assertive"></i>
+                    <p>账户信息</p>
+                </li>
+                <li ui-sref="agent.getRealMoney" style="width:33.333%">
+                    <i class="iconfont icon-shop assertive" style="color:#C72A4C"></i>
+                    <p>我要提现</p>
+                </li>
+                <li ui-sref="shop.modifyLoginPwd({type:1})" style="width:33.333%">
+                    <i class="iconfont icon-shop assertive" style="color:#85B09D"></i>
+                    <p>修改登录密码</p>
+                </li>
+
+            </ul>
+        </div>
+    </ion-content>
+</ion-view>

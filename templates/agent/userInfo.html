@@ -1,0 +1,33 @@
+<ion-view view-title="账户信息" hide-nav-bar="true">
+    <ion-header-bar class="bar-assertive header-back">
+        <div class="buttons">
+            <button class="button iconfont icon-back1 button-clear" ng-click="$ionicGoBack()">返回</button>
+        </div>
+        <h1 class="title">账户信息</h1>
+    </ion-header-bar>
+    <ion-content class="bodybg-normal">
+        <div class="yd-donate-count real-count">
+            <ul>
+                <li class="flex">
+                    <p class="flex_1">账户ID</p>
+                    <span class="num-right">{{myInfo.id}}</span>
+                </li>
+                <li class="flex">
+                    <p class="flex_1">账户手机号</p>
+                    <span class="num-right">{{myInfo.mobile}}</span>
+                </li>
+                <li class="flex" ng-if="show">
+                    <p class="flex_1">账户姓名</p>
+                    <input type="text" class="num-right" ng-model="myInfo.realname" style="text-align:right" placeholder="请填写姓名">
+                </li>
+            	<li class="flex"  ng-if="!show">
+                    <p class="flex_1">账户姓名</p>
+                    <span class="num-right">{{myInfo.realname}}</span>
+                </li>
+            </ul>
+        </div>
+    </ion-content>
+    <ion-footer-bar ng-if="show">
+        <button class="button button-assertive" style="width: 100%;" ng-click="submit()">提交</button>
+    </ion-footer-bar>
+</ion-view>

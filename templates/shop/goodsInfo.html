@@ -1,0 +1,76 @@
+<ion-view view-title="商品详情" hide-nav-bar="true">
+    <div ng-if="isproduceDesc">
+        <ion-header-bar class="bar-assertive header-back">
+            <div class="buttons">
+                <button class="button iconfont icon-back1 button-clear" ng-click="$ionicGoBack()">返回</button>
+            </div>
+            <h1 class="title">商品详情</h1>
+        </ion-header-bar>
+        <ion-content>
+            <div class="yd-donate-count real-count s-apply-c">
+                <ul>
+                    <li>
+                        <label>商品名称</label>
+                        <input type="text" ng-model="goodInfo.goodsName" disabled>
+
+                    </li>
+                    <li>
+                        <label>商品价格</label>
+                        <input type="text" ng-model="goodInfo.spe_price" disabled>
+                    </li>
+                    <li>
+                        <label>商品门市价</label>
+                        <input type="text" ng-model="goodInfo.marketPrice" disabled>
+                    </li>
+                    <li>
+                        <label>商品库存</label>
+                        <input type="text" placeholder="请输入商品库存" ng-model="goodInfo.total" disabled>
+                    </li>
+                    <!--ng-click="showProduceDesc()" -->
+                    <li class="item-icon-right">
+                        商品描述
+                        <div class="yd-reject-con flex" style="padding:0">
+                            <textarea rows="10" class="flex_1" ng-model="goodInfo.goodsDesc" disabled></textarea>
+                        </div>
+                        <!--<i class="icon ion-chevron-right" style="font-size: 1em;"></i>-->
+                    </li>
+                </ul>
+            </div>
+            <div class="yd-apply-img">
+                <h3>商品图片</h3>
+                <div class="row">
+                    <div class="col photo_box">
+                        <p>图片1</p>
+                         <img ng-src='{{goodInfo.firstImg}}' alt="firstImg" />
+                    </div>
+                    <div class="col photo_box">
+                        <p>图片2</p>
+                        <img  ng-src="{{goodInfo.secondImg}}" alt="secondImg" />
+                    </div>
+                    <div class="col photo_box">
+                        <p>图片3</p>
+                        <img  ng-src="{{goodInfo.thirdImg}}" alt="thirdImg" />
+                    </div>
+                </div>
+            </div>
+
+
+        </ion-content>
+    </div>
+    <div class="applyBol" ng-if="!isproduceDesc">
+        <ion-header-bar class="bar-assertive header-back">
+            <div class="buttons">
+                <button class="button iconfont icon-back1 button-clear" ng-click="showProduceDesc()">返回</button>
+            </div>
+            <h1 class="title">商品描述</h1>
+        </ion-header-bar>
+        <ion-content class="bodybg-normal">
+            <div class="yd-reject-con flex">
+                <textarea rows="10" class="flex_1" ng-model="goodInfo.goodsDesc" disabled></textarea>
+            </div>
+
+        </ion-content>
+    </div>
+
+    </div>
+</ion-view>

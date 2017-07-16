@@ -1,0 +1,37 @@
+<ion-view view-title="下级商户" hide-nav-bar="true" hide-back-button="true">
+    <ion-header-bar class="bar-assertive header-back">
+        <div class="buttons">
+            <button class="button iconfont icon-back1 button-clear" ng-click="$ionicGoBack()">返回</button>
+        </div>
+        <h1 class="title" ng-if="globalInfo.user.role == 1">下级商家</h1>
+        <h1 class="title" ng-if="globalInfo.user.role == 2">下级代理商</h1>
+    </ion-header-bar>
+
+    <ion-content class="bodybg-normal">
+        <ion-refresher pulling-text="下拉刷新..." on-refresh="doRefresh()"></ion-refresher>
+        <div class="common-empty" ng-if="orderEmpty">您还没有推荐商家</div>
+        <div class="row" ng-if="!orderEmpty && globalInfo.user.role == 1">
+            <div class="col ">商户名称</div>
+            <div class="col">商户手机号</div>
+        </div>
+        <div class="row" ng-if="!orderEmpty && globalInfo.user.role == 2">
+            <div class="col ">代理商名称</div>
+            <div class="col">代理商手机号</div>
+        </div>
+        <div class="yd-mesg-coutent" ng-if="!orderEmpty && globalInfo.user.role == 1" ng-repeat="item in shopList">
+            <div class="row">
+                <div class="col ">{{item.title || '暂无'}}</div>
+                <div class="col">{{item.mobile}}</div>
+            </div>
+        </div>
+        <div class="yd-mesg-coutent" ng-if="!orderEmpty && globalInfo.user.role == 2" ng-repeat="item in shopList">
+            <div class="row">
+                <div class="col ">{{item.realname || '暂无'}}</div>
+                <div class="col">{{item.mobile}}</div>
+            </div>
+        </div>
+
+        <ion-infinite-scroll ng-if="noMore" on-infinite="loadMore()" distance="-1%" immediate-check="false">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,21 @@
+<ion-view view-title="收益详情" hide-nav-bar="true" hide-back-button="true">
+    <ion-header-bar class="bar-assertive header-back">
+        <div class="buttons">
+            <button class="button iconfont icon-back1 button-clear" ng-click='$ionicGoBack()'>返回</button>
+        </div>
+        <h1 class="title">收益信息</h1>
+    </ion-header-bar>
+    <ion-content>
+        <ion-refresher pulling-text="下拉刷新..." on-refresh="doRefresh()"></ion-refresher>
+        <div class="row" >
+            <div class="col ">日期</div>
+            <div class="col">收益金额</div>
+        </div>
+        <div class="yd-mesg-coutent" >
+            <div class="row">
+                <div class="col">2017-04-26</div>
+                <div class="col">150</div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,39 @@
+<ion-view view-title="我要提现" hide-nav-bar="true">
+	<ion-header-bar class="bar-assertive header-back">
+		<div class="buttons">
+			<button class="button iconfont icon-back1 button-clear" ng-click="$ionicGoBack()">返回</button>
+		</div>
+		<h1 class="title">我要提现</h1>
+		<div class="buttons">
+			<button class="button button-clear" ui-sref="shop.repoList">提现记录</button>
+		</div>
+	</ion-header-bar>
+	<ion-content class="bodybg-normal">
+		<!-- ng-bind-html="repoInfo.message"-->
+		
+
+		<div class="yd-donate-count real-count">
+			<ul>
+					<li >
+						<label>银行名称</label>
+						<input type="text" style="padding-left:120px" placeholder="请输入银行名称" ng-model="getMoney.bankName">
+					</li>
+					<li >
+						<label>银行卡号</label>
+						<input style="padding-left:120px" type="text" placeholder="请输入银行卡号" ng-model="getMoney.bankCard">
+					</li>
+					<li >
+						<label>银行卡账户名</label>
+						<input style="padding-left:120px" type="text" placeholder="请输入银行卡账户名" ng-model="getMoney.bankUser">
+					</li>
+					<li >
+						<label>银行卡预留手机号</label>
+						<input type="text" style="padding-left:120px" placeholder="请输入银行卡预留手机号" ng-model="getMoney.bankMobile">
+					</li>
+				</ul>
+				<div class="padding sure-btn">
+					<button class="button button-block button-assertive" ng-click="submit()">确定</button>
+				</div>
+		</div>
+	</ion-content>
+</ion-view>

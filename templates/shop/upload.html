@@ -1,0 +1,94 @@
+<ion-view view-title="发布商品" hide-nav-bar="true">
+    <div ng-if="isproduceDesc">
+        <ion-header-bar class="bar-assertive header-back">
+            <div class="buttons">
+                <button class="button iconfont icon-back1 button-clear" ui-sref='tab.home'>返回</button>
+            </div>
+            <h1 class="title">发布商品</h1>
+        </ion-header-bar>
+        <ion-content>
+            <div class="yd-donate-count real-count s-apply-c">
+                <ul>
+                    <li>
+                        <label>商品名称</label>
+                        <input type="text" placeholder="请输入商品名称" ng-model="uploadInfo.goodsName">
+                    </li>
+                    <li>
+                        <label>商品价格</label>
+                        <input type="text" placeholder="请输入商品价格" ng-model="uploadInfo.ex_price">
+                    </li>
+                    <li>
+                        <label>商品门市价</label>
+                        <input type="text" placeholder="请输入商品门市价" ng-model="uploadInfo.marketPrice">
+                    </li>
+                    <li>
+                        <label>商品库存</label>
+                        <input type="text" placeholder="请输入商品库存" ng-model="uploadInfo.total">
+                    </li>
+                    <!--ng-click="showProduceDesc()" 描述框-->
+                    <li class="item-icon-right">
+                        请输入商品描述
+                        <!--<i class="icon ion-chevron-right" style="font-size: 1em;"></i>-->
+                        <div class="yd-reject-con flex" style="padding:0">
+                            <textarea rows="10" class="flex_1" placeholder="请输入商品描述" ng-model="uploadInfo.goodsDesc"></textarea>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="yd-apply-img">
+                <h3>上传商品图片</h3>
+                <div class="row">
+                    <div class="col photo_box">
+                        <p>图片1</p>
+                        <!--<em id="divImg01"></em>-->
+                        <img alt="" src="{{uploadInfo.firstImg || './img/wuimg.png'}}">
+                        <i class="iconfont icon-add" id="divImg1" ng-click="uploadAvatar(1)"></i>
+                    </div>
+                    <div class="col photo_box">
+                        <p>图片2</p>
+                        <!--<em id="divImg02"></em>-->
+                        <img alt="" src="{{uploadInfo.secondImg || './img/wuimg.png'}}">
+                        <i class="iconfont icon-add" id="divImg2" ng-click="uploadAvatar(2)"></i>
+                    </div>
+                    <div class="col photo_box">
+                        <p>图片3</p>
+                        <!--<em id="divImg03"></em>-->
+                        <img alt="" src="{{uploadInfo.thirdImg || './img/wuimg.png'}}">
+                        <i class="iconfont icon-add" id="divImg3" ng-click="uploadAvatar(3)"></i>
+                    </div>
+                </div>
+                <!--<div class="row">
+                    <div class="col photo_box">
+                        <p>图片3</p>
+                        <em id="divImg03"></em>
+                        <i class="iconfont icon-add" id="divImg3" ng-click="uploadAvatar(3)"></i>
+                    </div>
+                    <div class="col photo_box">
+                        <p>图片4</p>
+                        <em id="divImg04"></em>
+                        <i class="iconfont icon-add" id="divImg4" ng-click="uploadAvatar(4)"></i>
+                    </div>
+                </div>-->
+            </div>
+        </ion-content>
+        <ion-footer-bar>
+            <button class="button button-assertive" style="width: 100%;" ng-click="upload()">发布</button>
+        </ion-footer-bar>
+    </div>
+    <div class="applyBol" ng-if="!isproduceDesc">
+        <ion-header-bar class="bar-assertive header-back">
+            <div class="buttons">
+                <button class="button iconfont icon-back1 button-clear" ng-click="showProduceDesc()">返回</button>
+            </div>
+            <h1 class="title">商品描述</h1>
+        </ion-header-bar>
+        <ion-content class="bodybg-normal">
+            <div class="yd-reject-con flex">
+                <textarea rows="10" class="flex_1" placeholder="请输入商品描述" ng-model="uploadInfo.goodsDesc"></textarea>
+            </div>
+            <button class="button button-block button-assertive zl_btn_center" ng-click="showProduceDesc();">提交</button>
+        </ion-content>
+    </div>
+
+    </div>
+</ion-view>

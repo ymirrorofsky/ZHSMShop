@@ -1,0 +1,621 @@
+/* Empty. Add your own CSS if you like */
+.h_agree label.ion-android-checkbox:before{
+	font-size:20px;
+	position:relative;
+	top:2px;
+	/*color:#ff6600;*/
+	color: #ff5b1f;
+}
+.h_agree label.ion-android-checkbox-outline-blank:before{
+	font-size:20px;
+	position:relative;
+	top:2px;
+}
+
+.popup-body {
+	text-align: center;
+}
+.positive, a.positive {
+    color: #ff5b1f;
+}
+.bar.bar-assertive {
+	background-color: #ff5b1f;
+	background-image: linear-gradient(0deg, #ff5b1f, #ff5b1f 50%, transparent 50%);
+}
+.button.button-positive {
+    border-color: transparent;
+    background-color: #ff5b1f;
+    color: #fff;
+}
+.button.button-positive.active, .button.button-positive.activated {
+	border-color: transparent;
+    background-color: #ff5b1f;
+}
+.button.button-assertive {
+	background-color: #ff5b1f;
+}
+.button.button-assertive.active {
+	background-color: #ff5b1f;
+}
+.button.button-assertive.activated {
+	background-color: #ff5b1f;
+}
+.assertive {
+	color: #ff5b1f;
+}
+.t_login_user {
+	text-align: center;
+	padding: 50px 0 20px 0;
+	height: 170px;
+}
+.t_login_user img {
+	height: 100px;
+}
+.t_login_count label i{
+	font-size:26px;
+}
+.t_login_count .foget{
+	padding:0 10px 10px;
+}
+.t_login_count .foget .foget-psd{
+	float: left;
+}
+.t_login_count .foget .agree{
+	display: inline-flex;
+	float: right;
+}
+.t_login_count .foget .agree i{
+	font-size:22px;
+	margin-right:5px;
+}
+.t_login_count .foget .agree i.ion-android-checkbox:before{
+	/*color:#ff6600;*/
+	color: #ff5b1f;
+}
+.login_selectRole .cs-skin-border > span {
+	border: 1px solid #ff5b1f;
+	
+}
+/*注册*/
+.h_register{
+	display: flex;
+	flex-direction:row;
+	justify-content: space-around;
+	align-content:center;
+	height:50px;
+	width:100%;
+	margin:20px 0 0;
+	padding:0 15px;
+	background:#fff;
+}
+
+.h_register span{
+	align-self: center;
+	font-size:15px;
+	color:#666;
+}
+.h_register span.fontColor{
+	/*color:#ff6600;*/
+	color: #ff5b1f;
+}
+.h_register b{
+	align-self: center;
+	color:#ccc;
+}
+/*忘记密码*/
+.t_backMima_message {
+	border-top: 1px solid #f6f6f6;
+}
+
+.t_backMima_message .c {
+	height: 51px;
+	position: relative;
+	font-size: 16px;
+	margin:10px 0;
+}
+
+.t_backMima_message .c label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 50px;
+	height: 50px;
+	color: #353535;
+}
+
+.t_backMima_message .c input {
+	color: #555;
+	font-size: 16px;
+	height: 50px;
+	width:100%;
+	padding-left: 20px;
+}
+.t_backMima_message .c img {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 120px;
+	height: 50px;
+}
+.t_backMima_message .d button {
+	position: absolute;
+	font-size: 14px;
+	right: 0;
+	top: 0;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 10px;
+	color: #fff;
+	background-color: #ff6600;
+	border: none;
+}
+
+.t_backMima_message .d button.discli{
+	background:#eaa06e;
+}
+/*注册获取验证码*/
+.h_intext{
+	margin-top:20px;
+	width:100%;
+	height:50px;
+	position:relative;
+}
+.h_intext input{
+	width:70%;
+	height:100%;
+	border-top:1px solid #e9e9e9;
+	border-bottom:1px solid #e9e9e9;
+	padding-left:20px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.h_intext label{
+	width:30%;
+	display: inline-block;
+	height:100%;
+	line-height:50px;
+	text-align:center;
+	color:#fff;
+	font-size:15px;
+	background:#ff6600;
+	position:absolute;
+	right:0;
+	top:0;
+}
+.h_intext label.missclick{
+	background:#eaa06e;
+}
+.h_intext label b{
+	font-weight:normal;
+}
+
+
+.my-bottom-nav{
+	background: #FFF;
+}
+.my-bottom-nav li{
+	float: left;
+	width: 33.33333%;
+	padding: 15px 0;
+	text-align: center;
+	border-right: 1px solid #eaeaea;
+	border-bottom:1px solid #eaeaea; 
+	height:80px;
+}
+.my-bottom-nav .com{
+	/*border-bottom: 1px solid #eaeaea;*/
+}
+.my-bottom-nav .com li:nth-child(3){
+	/*border-right:none*/
+}
+.my-bottom-nav li i{
+	font-size: 26px;
+}
+.my-bottom-nav li p{
+	color: #6B6B6B;
+	margin:5px 0 0 0;
+}
+.yd-donate-count li p, .yd-donate-text p{
+	margin:0;
+}
+.yd-donate-count li label{
+	color: #000;
+}
+.yd-donate-count li{
+	border-bottom:1px solid #eaeaea;
+}
+.yd-donate-count li .bean{
+	position: absolute;
+	left:0;
+	width: 100%;
+	text-align: center;
+	z-index: 9999;
+	background: #fff
+}
+.yd-donate-count li .beanType i{
+	margin-left:3px;
+}
+.yd-donate-count li.repo input{
+	padding-left:80px;
+}
+.yd-donate-count li span{
+	color: #ef4e3a;
+}
+.yd-donate-count li .num-right{
+	display: inline-flex;
+}
+.yd-donate-count li .num-right i{
+	margin-left:5px;
+}
+.yd-donate-text{
+	border-bottom:1px solid #eaeaea;
+	background: #FFF;
+}
+.real-count li{
+	background: #FFF;
+	padding:5px 10px;
+	line-height: 35px;
+	position: relative;
+}
+.real-count li label{
+	position: absolute;
+	/*color: #7d7d7d;*/
+	margin-right:5px;
+	line-height: 35px;
+}
+.real-count li input{
+	padding-left: 75px;
+	width: 100%;
+	display: block;
+	line-height:33px;
+}
+.real-count li .common{
+	padding-left: 65px;
+}
+.real-count li .btn{
+	position: absolute;
+	right: 10px;
+	top: 4px;
+	line-height: 32px;
+	border-radius: 5px;
+	padding: 0 10px;
+	font-size: 14px;
+}
+.real-count li .sex span{
+	margin-right:10px;
+	display: inline-flex;
+}
+.real-count li .sex em{
+	line-height: 37px;
+}
+.real-count li .sex span i{
+	font-size:20px;
+	margin-right:5px;
+	color: #7d7d7d;
+}
+ .real-count li .sex span i.ion-ios-circle-filled{
+	 color: #ff6600;
+ }
+.yd-reject-con{
+	padding:30px 10px 10px;
+}
+.yd-reject-con textarea{
+	padding:5px;
+	border:2px dotted #ff5b1f;
+	border-radius: 5px;
+}
+.zl_btn_center {
+    width: 90%!important;
+    margin: 0 auto;
+    margin-top: 25px!important;
+}
+
+.yd-apply-img{
+	background: #fff;
+	padding:10px;
+}
+.row {
+    text-align: center;
+    line-height: 40px;
+    padding: 0;
+}
+.yd-apply-img h3{
+    text-align: center;
+	font-size: 14px;
+	margin:0;
+}
+.yd-apply-img .col p{
+	margin:0;
+}
+.yd-apply-img .col i{
+	display: inline-block;
+	font-size: 40px;
+	width: 100px;
+	height: 100px;
+	border: 1px dashed #7d7d7d;
+	line-height: 100px;
+	color: #7d7d7d;
+
+}
+.yd-apply-img .row{
+	padding-bottom:5px;
+}
+.yd-apply-img .col em{
+	display: inline-block;
+	font-size: 40px;
+	width: 102px;
+	height: 102px;
+	line-height: 100px;
+	color: #7d7d7d;
+	/*background: url(../img/bg.jpg) 100% 100%;*/
+}
+.yd-apply-img .photo_box{
+	position:relative;
+	width:150px;
+	height:133px;
+}
+.yd-apply-img .photo_box em{
+	position:absolute;
+	top:30%;
+	left:50%;
+	width:100px;
+	height:100px;
+	margin-top:-29px;
+	margin-left:-50px;
+	background-size:100px 100px;
+	background-position:top left;
+}
+.yd-apply-img .photo_box img{
+	position:absolute;
+	top:30%;
+	left:50%;
+	width:100px;
+	height:100px;
+	margin-top:-29px;
+	margin-left:-50px;
+	background-size:100px 100px;
+	background-position:top left;
+}
+.yd-apply-img .photo_box i{
+	position:absolute;
+	top:30%;
+	left:50%;
+	margin-top:-29px;
+	margin-left:-50px;
+}
+.manage span {
+    font-size: 12px;
+    display: inline-block;
+    border-radius: 3px;
+    color: #fff;
+}
+.manage span.detail {
+    background-color: red;
+}
+
+/*商家信息地址*/
+.ss-my-address {
+	background: #fff;
+	margin-top: 5px;
+}
+.ss-my-address li {
+	padding: 8px 0;
+	margin: 0 10px;
+	border-bottom: 2px solid #ececec;
+}
+/*商家订单列表*/
+.shop-order-list li{
+	border-bottom:1px solid #eaeaea;
+	line-height:25px;
+	background: #fff;
+}
+.shop-order-list li a{
+	display: block;
+	padding:10px;
+	color: #000;
+	text-decoration: none;
+}
+.shop-order-list li p{
+	margin:0;
+}
+.yd-shops-order{
+	padding:10px 0 0;
+	margin-bottom:15px;
+	background: #FFF;
+	border-bottom:1px solid #eaeaea;
+}
+.yd-shops-order p{
+	padding:0 16px;
+	font-size:15px;
+}
+.yd-shops-order h3{
+	font-size:16px;
+	padding:0 16px;
+	border-top:1px solid #eaeaea;
+	margin:0;
+	line-height:40px;
+}
+/*直捐*/
+.yd-donate-count li p, .yd-donate-text p{
+	margin:0;
+}
+.yd-donate-count li label{
+	color: #000;
+}
+.yd-donate-count li{
+	/*margin:0 0 10px 0;*/
+	border-bottom:1px solid #eaeaea;
+}
+.yd-donate-count li .bean{
+	position: absolute;
+	left:0;
+	width: 100%;
+	text-align: center;
+	z-index: 9999;
+	background: #fff
+}
+.yd-donate-count li .beanType i{
+	margin-left:3px;
+}
+.yd-donate-count li.repo input{
+	padding-left:80px;
+}
+.yd-donate-count li span{
+	color: #ff5b1f;
+}
+.yd-donate-count li .num-right{
+	display: inline-flex;
+}
+.yd-donate-count li .num-right i{
+	margin-left:5px;
+}
+/*我的消息*/
+.yd-mesg-coutent{
+	background: #FFF;
+}
+.yd-mesg-coutent li{
+	line-height:20px;
+	border-bottom: 1px solid #eaeaea;
+	padding:8px 10px;
+}
+.yd-mesg-coutent li h3{
+	font-size:15px;
+	margin-bottom:5px;
+}
+.yd-mesg-coutent li .bottom{
+	color: #7d7d7d;
+}
+.yd-mesg-coutent li .bottom p{
+	margin: 0;
+	font-size:13px;
+}
+/*推荐二维码*/
+.yd-rec-qcode{
+	margin-top:20px;
+	text-align: center;
+}
+/*财务管理*/
+.my-header{
+	height:60px;
+	background: #ff5b1f;
+
+}
+.my-header .mobile{
+	text-align: center;
+	color: #fff;
+}
+.my-header ul li{
+	float: left;
+	width:33.333%;
+	text-align: center;
+	color: #fff;
+	margin:5px 0;
+}
+.my-header ul li div{
+	border-right:1px solid #fff;
+}
+.my-header ul li div p{
+	margin:2px 0 0 0;
+}
+.my-header ul li:last-child div{
+	border-right:none;
+}
+
+/*统计页面样式*/
+.count-header * {
+	margin: 0;
+	padding: 0;
+}
+
+.count-header {
+	background-size: cover;
+	background: url("../img/mylove_bg.png") no-repeat bottom;
+}
+
+.count-header .turnover {
+	padding-top: 30px;
+	text-align: center;
+}
+
+.count-header .turnover h4 {
+	line-height: 30px;
+	font-size: 30px;
+	color: #fff;
+	font-weight: bold;
+	margin: 0;
+}
+
+.count-header .turnover p {
+	line-height: 20px;
+	font-size: 12px;
+	color: #eee;
+	margin: 0;
+}
+
+.count-header .user {
+	padding: 20px 0 10px 0;
+}
+
+.count-header .user li {
+	float: left;
+	width: 50%;
+	font-size: 16px;
+	color: #fff;
+	line-height: 25px;
+	text-align: center;
+}
+
+.count-header .user li:first-child {
+	border-right: 1px solid #dfdfdf;
+}
+/*添加银行卡*/
+.yd-add-bank{
+	border-bottom:1px solid #eaeaea;
+	padding:10px;
+	text-align: center;
+	background: #FFF;
+}
+.yd-add-bank i{
+	font-size: 35px;
+	color: #ff5b1f;
+}
+.yd-add-bank p{
+	margin:0;
+	line-height:25px;
+}
+.row .col.active{
+	border-bottom:3px solid #ff5b1f;
+	color: #ff5b1f;
+}
+/*回购记录*/
+.yd-repo-list{
+	background: #FFF;
+}
+.yd-repo-list li a{
+	padding:10px;
+	color: #7d7d7d;
+	border-bottom:1px solid #eaeaea;
+}
+.yd-repo-list li p{
+	margin:0;
+}
+.yd-repo-list li span{
+	line-height:40px;
+}
+.yd-repo-list li .num{
+	padding-right:20px;
+	color: #2EA24F;
+}
+.yd-repo-list li .num i{
+	margin-right:5px;
+}
+.yd-repo-info h3{
+	font-size:16px;
+	line-height:30px;
+}
+.yd-repo-info p, .yd-repo-info h3{
+	padding:10px;
+	border-bottom:1px solid #eaeaea;
+	margin:0;
+}
